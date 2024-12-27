@@ -1,0 +1,365 @@
+/* estilos basicos de css*/
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: Arial, sans-serif;
+    color: #d80032;
+    background-color: #ffeae3;
+    line-height: 1.6;
+}
+/* estilos para el encabezado*/
+.main-header {
+    background-color: #ffeae3;
+    padding: 20px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    border-bottom: 1px solid #ddd;
+}
+.main-header .logo{
+   width: 3%;
+   height: auto;
+   margin-right: 15px;
+}
+
+.main-header h1{
+    font-size: 24px;
+    color: #d80032;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    margin-left: auto;
+}
+
+.nav-links li {
+    margin-left: 15px;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: #d80032;
+    font-weight: bold;
+}
+
+.nav-links a:hover {
+    color: #d80032;
+}
+
+.nav-links a:visited {
+   color: #d80032;
+}
+.hero-section {
+    background-image: url('assets/hero-image.jpg'); /*imagen de fondo*/
+    background-size: cover;
+    background-position: center;
+    color: #920526;
+    text-align: center;
+    padding: 60px 20px;
+}
+
+.hero-section h2 {
+    font-size: 36px;
+    margin-bottom: 10px;
+}
+ .hero-section p {
+    font-size: 18px;
+    margin-bottom: 20px;
+ }
+
+ .hero-section button {
+    background-color: #921a40;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 5px;
+ }
+
+ .hero-section button:hover {
+    background-color: #921a40;
+ }
+
+ /*PRODUCTOS*/
+ .products-section {
+    padding: 40px 20px;
+    text-align: center;
+ }
+ .redes-gallery{
+   display: flex;
+   flex-wrap: wrap;
+   gap: 20px;
+   justify-content: center;
+   margin: 20px auto;
+ }
+ .redes-section{
+   display: flex;
+   flex-direction: column; /* Asegura que los elementos estén en columna */
+   align-items: center;    /* Centra horizontalmente */
+   padding: 20px;
+ }
+ .redes-card button:hover {
+   background-color: #3D0C11;
+}
+.redes-section h2 {
+   margin-bottom: 20px; /* Añade espacio entre el título y las cards */
+   font-size: 24px;
+}
+
+.redes-card:hover {
+   transform: scale(1.05);
+   box-shadow: 0 8px 10px rgba(0, 0, 0, 0.2);
+}
+ .products-section h2 {
+    font-size: 28px;
+    margin-bottom: 20px;
+ }
+ .product-gallery {
+   display: flex;
+   flex-wrap: wrap;
+   /*grid-template-columns: repeat(4, 1fr); /* 4 columnas por fila */
+   gap: 20px; /* Espaciado entre las tarjetas */
+   justify-content: space-between; /* Centra el contenido */
+ }
+ .product-card {
+   width: 520px;
+   height: 580px;
+   background-color: #fff;
+   border: 1px solid #ddd;
+   border-radius: 8px;
+   text-align: center;
+   padding: 10px;
+   text-decoration: none;
+   color: #643843; /* Cambia el color de texto */
+   transition: transform 0.3s ease;
+   flex-shrink: 0;
+ }
+ .product-card img {
+   width: 500px;
+   height: 400px;
+   border-radius: 8px;
+   object-fit: cover;
+}
+.image-carousel {
+   position: relative;
+   width: 100%;
+   overflow: hidden;
+}
+.carousel-container{
+   display: flex;
+   transition: transform 0.7s ease-in-out;
+}
+.carousel-container img{
+   width: 100%;
+   flex-shrink: 0;
+}
+.carousel-prev,
+.carousel-next{
+   position: absolute;
+   top: 50%;
+   transform: translateY(-50%);
+   background-color: rgba(0, 0, 0, 0.5);
+   color: #fff;
+   border: none;
+   cursor: pointer;
+   padding: 10px;
+   z-index: 10;
+}
+.carousel-prev{
+   left: 10px;
+}
+.carousel-next{
+   right: 10px;
+}
+ .product-card:hover{
+   transform: scale(1.05); /*agregar un efecto*/
+ }
+ .redes-card{
+   background-color: #F4D9D0;
+   border: 1px solid #ddd;
+   border-radius: 8px;
+   padding: 20px;
+   text-align: center;
+   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+   width: 200px;
+   transition: transform 0.3s ease, box-shadow 0.3s ease;  
+ }
+ .redes-card img{
+   max-width: 100%;
+   height: auto;
+   margin-bottom: 10px;
+   border-radius: 5px;
+ }
+ .redes-card h3 {
+   margin: 10px 0;
+   font-size: 1.2rem;
+   color: #3D0C11;
+}
+.redes-card p{
+   font-size: 1rem;
+   color: #3D0C11;
+   text-align: center;
+   margin-top: 10px;
+   font-style: italic;
+   text-decoration: none;
+}
+ .product-card h3 {
+    margin: 10px 0;
+    font-size: 18px;
+    color: #3D0C11;
+ }
+ .product-card p {
+    font-size: 14px;
+    color: #643843;
+    margin-bottom: 10px;
+    white-space: nowrap;
+ }
+ .product-card span {
+    font-weight: bold;
+    color: #643843;
+ }
+ .brand-section{
+   padding: 40px 20px;
+   background-color: #ffeae3;
+   margin-top: 30px;
+ }
+ .brand-gallery{
+   display: flex;
+   flex-wrap: wrap;
+   gap: 20px;
+   justify-content: center;
+   margin: 20px auto;
+ }
+ .brand-card{
+   background-color: #F4D9D0; /*color de atras de marcas*/
+   border: 1px solid #ddd;
+   border-radius: 8px;
+   padding: 20px;
+   text-align: center;
+   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+   width: 200px;
+   transition: transform 0.3s ease, box-shadow 0.3s ease; 
+ }
+ .brand-card img {
+   max-width: 100%;
+   height: auto;
+   margin-bottom: 10px;
+   border-radius: 5px;
+}
+
+.brand-card h3 {
+   margin: 10px 0;
+   font-size: 1.2rem;
+   color: #3D0C11; /*color letras*/
+}
+
+.brand-card button {
+   background-color: #007bff;
+   color: #fff;
+   border: none;
+   border-radius: 4px;
+   padding: 10px 15px;
+   cursor: pointer;
+   transition: background-color 0.3s ease;
+}
+
+.brand-card button:hover {
+   background-color: #0056b3;
+}
+
+.brand-card:hover {
+   transform: scale(1.05);
+   box-shadow: 0 8px 10px rgba(0, 0, 0, 0.2);
+}
+
+ /*sobre nosotros*/
+ .about-section {
+    padding: 40px 20px;
+    background-color: #ffeae3;
+    text-align: center;
+ }
+ .about-section h2 {
+    font-size: 28px;
+    margin-bottom: 15px;
+ }
+ .about-section p {
+    font-size: 16px;
+    color: #643843;
+    max-width: 600px;
+    margin: auto;
+ }
+ /*formulario de contacto*/
+ .contact-section {
+    padding: 40px 20px;
+    text-align: center;
+    display: flex;       /* Usamos flexbox */
+    justify-content: center;  /* Centra horizontalmente */
+    align-items: center;      /* Centra verticalmente */
+    height: 85vh;       /* Establece una altura de 100vh (altura completa de la ventana) */
+ }
+ .contact-section h2 {
+    font-size: 28px;
+    margin-bottom: 20px;
+    text-align: center;
+ }
+form{
+    max-width: 400px;
+    margin-bottom: auto;
+ }
+form label{
+    display: block;
+    font-weight: bold;
+    margin-bottom: 5px;
+    color: #643843;
+ }
+form input,
+form textarea{
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+ }
+
+form button{
+    background-color: #921a40;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 5px;
+ }
+form button:hover{
+    background-color: #921a40;
+}
+
+.main-footer {
+    background-color: #643843;
+    color: #fff;
+    text-align: center;
+    padding: 20px;
+}
+.main-footer p {
+    font-size: 14px;
+}
+.explore-button{
+   display: inline-block;
+   padding: 10px 20px;
+   background-color: #643843; /* Color del botón */
+   color: white; /* Color del texto */
+   text-align: center;
+   text-decoration: none; /* Sin subrayado */
+   border-radius: 5px; /* Bordes redondeados */
+   font-size: 16px; /* Tamaño de fuente */
+   transition: background-color 0.3s ease; /* Animación al pasar el cursor */
+}
+.explore-button:hover{
+   background-color: #804958; /*color al pasar el cursor*/
+}
