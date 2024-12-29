@@ -11,11 +11,22 @@
     }
 
     .product-card {
-        margin-bottom: 20px;
-        width: 100%;
+        max-width: 100%; /* Asegura que la imagen no exceda el ancho del contenedor */
+        height: auto;    /* Mantiene la proporción original */
+        display: block;  /* Evita espacios extra alrededor de las imágenes */
     }
 
     h1 {
         font-size: 1.5rem;
+    }
+    .image-carousel, .carousel-container {
+        width: 100%; /* Asegura que el carrusel ocupe todo el ancho disponible */
+        max-width: 100%; /* No se expanda más allá del contenedor padre */
+        overflow: hidden; /* Oculta cualquier contenido desbordado */
+    }
+
+    .carousel-container img {
+        width: 100%; /* Cada imagen ocupa el 100% del ancho del contenedor */
+        object-fit: cover; /* Asegura que la imagen se recorte correctamente si es necesario */
     }
 }
