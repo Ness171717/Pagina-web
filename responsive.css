@@ -1,0 +1,21 @@
+/* Media Query para pantallas pequeñas (móviles) */
+@media (max-width: 768px) {
+    .nav-links {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .products-section {
+        padding: 10px;
+    }
+
+    .product-card {
+        margin-bottom: 20px;
+        width: 100%;
+    }
+
+    h1 {
+        font-size: 1.5rem;
+    }
+}
