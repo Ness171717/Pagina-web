@@ -200,12 +200,13 @@ body{
    color: #643843; /* Cambia el color de texto */
    transition: transform 0.3s ease;
    flex-shrink: 0;
+   overflow: hidden;
  }
  .product-card img {
-   width: 500px;
-   height: 400px;
-   border-radius: 8px;
-   object-fit: cover;
+   width: 100%;
+   height: auto;
+   border-radius: 8px 8px 0 0;
+   object-fit: contain;
 }
 .image-carousel {
    position: relative;
