@@ -68,6 +68,10 @@
         height: auto;    /* Mantiene la proporción original */
         display: block;  /* Evita espacios extra alrededor de las imágenes */
     }
+    .product-card p{
+        font-size: 14px;
+        line-height: 1.5;
+    }
 
     h1 {
         font-size: 1.5rem;

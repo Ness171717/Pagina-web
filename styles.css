@@ -87,7 +87,7 @@ body{
     align-items: center;
     justify-content: space-between;
     padding: 5px 20px;
-    background-color: #FFEFEF;
+    background-color: #F6F5F2;
     border-bottom: 1px solid #F3D0D7; /*COLOR DE LAS LINEAS*/
 }
 
@@ -187,7 +187,7 @@ body{
  .product-gallery {
    display: grid;
    /*flex-wrap: wrap;*/
-   grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); /* columnas por fila */
+   grid-template-columns: repeat(auto-fit, minmax(350px, 1fr)); /* columnas por fila */
    gap: 50px; /* Espaciado entre las tarjetas */
    justify-content: center /*tra el contenido */
  }
@@ -195,8 +195,8 @@ body{
    box-sizing: border-box;
    width: 100%;
    max-width:300%;
-   height: 100%;
-   background-color: #FFEFEF;
+   height: auto;
+   background-color: #F6F5F2;
    border: 1px solid #ddd;
    border-radius: 8px;
    text-align: center;
@@ -283,10 +283,15 @@ body{
     color: #3D0C11;
  }
  .product-card p {
-    font-size: 14px;
+    font-size: 15px;
     color: #643843;
     margin-bottom: 10px;
-    white-space: nowrap;
+    /*display: -webkit-box;/*habilita caja flexible*/
+   /*-webkit-line-clamp: 2; /*muestra dos lineas*/
+   /*-webkit-box-orient: vertical;*/
+    word-wrap: break-word;
+    overflow-wrap: break-word;
+    white-space: normal;
  }
  .product-card span {
     font-weight: bold;
