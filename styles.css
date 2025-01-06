@@ -18,10 +18,10 @@ body{
     display: flex;
     justify-content: flex-start;
     align-items: center;
-    border-bottom: 1px solid #ddd;
+    border-bottom: 1px solid #F3D0D7;
 }
 .main-header .logo{
-   width: 3%;
+   width: 6%;
    height: auto;
    margin-right: 15px;
 }
@@ -73,7 +73,7 @@ body{
 
 .mobile-menu ul li {
    padding: 15px;
-   border-bottom: 1px solid #ddd;
+   border-bottom: 1px solid #F3D0D7;
 }
 
 .mobile-menu ul li a {
@@ -86,8 +86,8 @@ body{
     align-items: center;
     justify-content: space-between;
     padding: 10px 20px;
-    background-color: #f8f8f8;
-    border-bottom: 1px solid #ddd;
+    background-color: #FFEFEF;
+    border-bottom: 1px solid #F3D0D7; /*COLOR DE LAS LINEAS*/
 }
 
 .logo {
@@ -194,7 +194,7 @@ body{
    width: 100%;
    max-width:300%;
    height: 100%;
-   background-color: #fff;
+   background-color: #FFEFEF;
    border: 1px solid #ddd;
    border-radius: 8px;
    text-align: center;
@@ -248,7 +248,7 @@ body{
  }
  .redes-card{
    background-color: #F4D9D0;
-   border: 1px solid #ddd;
+   border: 1px solid #F3D0D7;
    border-radius: 8px;
    padding: 20px;
    text-align: center;
@@ -304,7 +304,7 @@ body{
  }
  .brand-card{
    background-color: #F4D9D0; /*color de atras de marcas*/
-   border: 1px solid #ddd;
+   border: 1px solid #F3D0D7;
    border-radius: 8px;
    padding: 20px;
    text-align: center;
@@ -389,7 +389,7 @@ form textarea{
     width: 100%;
     padding: 10px;
     margin-bottom: 15px;
-    border: 1px solid #ddd;
+    border: 1px solid #F3D0D7;
     border-radius: 5px;
  }
 
