@@ -5,6 +5,16 @@
         height: auto;
         margin-right: 15px;
     }
+    .main-header h1{
+        font-size: 25px;
+        color: #d80032;
+        word-spacing: -2px;
+    }
+    .products-section h2 {
+        font-size: 28px;
+        margin-bottom: 5px;
+        word-spacing: -2px;
+     }
     .nav-links {
         display: none;
     }
