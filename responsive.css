@@ -3,6 +3,7 @@
     .main-header .logo{
         width: 25%;
         height: auto;
+        margin-right: 15px;
     }
     .nav-links {
         display: none;
