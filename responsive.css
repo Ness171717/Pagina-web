@@ -1,5 +1,9 @@
 /* Media Query para pantallas pequeñas (móviles) */
 @media (max-width: 768px) {
+    .main-header .logo{
+        width: 15%;
+        height: auto;
+    }
     .nav-links {
         display: none;
     }
