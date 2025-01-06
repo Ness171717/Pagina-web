@@ -86,4 +86,22 @@
         width: 100%; /* Cada imagen ocupa el 100% del ancho del contenedor */
         object-fit: cover; /* Asegura que la imagen se recorte correctamente si es necesario */
     }
+    .carousel-prev,
+    .carousel-next{
+       position: absolute;
+       top: 50%;
+       transform: translateY(-50%);
+       background-color: rgba(0, 0, 0, 0.5);
+       color: #fff;
+       border: none;
+       cursor: pointer;
+       padding: 10px;
+       z-index: 10;
+    }
+    .carousel-prev{
+       left: 10px;
+    }
+    .carousel-next{
+       right: 10px;
+    }
 }
