@@ -3,6 +3,9 @@
     .nav-links {
         display: none;
     }
+    .product-gallery {
+        grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); /* Cambia a 2 columnas */
+    }
     .menu-toggle{
         display: block;
         font-size: 2rem;
