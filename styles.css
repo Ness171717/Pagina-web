@@ -9,7 +9,7 @@ body{
     font-family: Arial, sans-serif;
     color: #d80032;
     background-color: #ffeae3;
-    line-height: 1.6;
+    line-height: 2.5;
 }
 /* estilos para el encabezado*/
 .main-header {
@@ -27,8 +27,9 @@ body{
 }
 
 .main-header h1{
-    font-size: 24px;
+    font-size: 25px;
     color: #d80032;
+    word-spacing: -2px;
 }
 
 .nav-links {
@@ -85,7 +86,7 @@ body{
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding: 10px 20px;
+    padding: 5px 20px;
     background-color: #FFEFEF;
     border-bottom: 1px solid #F3D0D7; /*COLOR DE LAS LINEAS*/
 }
@@ -125,7 +126,7 @@ body{
 }
 
 .hero-section h2 {
-    font-size: 36px;
+    font-size: 100px;
     margin-bottom: 10px;
 }
  .hero-section p {
@@ -180,7 +181,8 @@ body{
 }
  .products-section h2 {
     font-size: 28px;
-    margin-bottom: 20px;
+    margin-bottom: 5px;
+    word-spacing: -2px;
  }
  .product-gallery {
    display: grid;
