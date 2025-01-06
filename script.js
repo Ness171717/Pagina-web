@@ -18,14 +18,18 @@ carousels.forEach((carousel) => {
     nextButton.addEventListener('click', () => {
         if (currentIndex < totalImages - 1) {
             currentIndex++;
-            updateCarousel();
+        } else {
+            currentIndex = 0; // Reinicia al inicio si está en la última imagen
         }
+        updateCarousel();
     });
 
     prevButton.addEventListener('click', () => {
         if (currentIndex > 0) {
             currentIndex--;
-            updateCarousel();
+        } else {
+            currentIndex = totalImages - 1; // Va a la última imagen si está en la primera
         }
+        updateCarousel();
     });
 });
