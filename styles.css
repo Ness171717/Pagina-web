@@ -277,6 +277,14 @@ body{
    font-style: italic;
    text-decoration: none;
 }
+.justified-text{
+   text-align: justify;
+   line-height: 1.5;
+}
+.centered-text{
+   text-align: center;
+   line-height: 1.5;
+}
  .product-card h3 {
     margin: 10px 0;
     font-size: 18px;
