@@ -25,7 +25,6 @@
         grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); /*  columnas */
     }
     .menu-toggle{
-        font-size: 24px;
         display: block;
         font-size: 2.5rem;
         background: none;
@@ -35,9 +34,6 @@
         color: #C75B7A;
         padding: 0;
         margin: 0;
-    }
-    .menu-toggle a{
-        font-size: 24px;
     }
     .mobile-menu{
         display: none;
@@ -49,6 +45,10 @@
         outline: none;
         box-shadow: none;
         z-index: 9999;
+    }
+    .hero-section h2 {
+        font-size: 40px;
+        margin-bottom: 10px;
     }
 
     .mobile-menu ul {
