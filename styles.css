@@ -7,7 +7,7 @@
 
 body{
     font-family: Arial, sans-serif;
-    color: #d80032;
+    color: #C75B7A;
     background-color: #ffeae3;
     line-height: 2.5;
 }
@@ -28,7 +28,7 @@ body{
 
 .main-header h1{
     font-size: 25px;
-    color: #d80032;
+    color: #C75B7A;
     word-spacing: -2px;
 }
 
@@ -44,12 +44,12 @@ body{
 
 .nav-links a {
     text-decoration: none;
-    color: #d80032;
+    color: #C75B7A;
     font-weight: bold;
 }
 
 .nav-links a:hover {
-    color: #d80032;
+    color: #C75B7A;
 }
 .menu-toggle{
    font-size: 24px;
@@ -57,7 +57,7 @@ body{
    cursor: pointer;
    display: none;
 }
-.mobile-menu{
+/*.mobile-menu{
    display: none;
    position: absolute;
    top: 70px;
@@ -114,13 +114,13 @@ body{
 }
 
 .nav-links a:visited {
-   color: #d80032;
+   color: #C75B7A;
 }
 .hero-section {
     background-image: url('assets/hero-image.jpg'); /*imagen de fondo*/
     background-size: cover;
     background-position: center;
-    color: #920526;
+    color: #C75B7A;
     text-align: center;
     padding: 60px 20px;
 }
