@@ -8,24 +8,15 @@
     .main-header .logo{
         width: 25%;
         height: auto;
-        margin-right: 3px;
+        margin-right: -20px;
     }
     .main-header h1{
         font-size: 35px;
         color: #C75B7A;
         letter-spacing: -1px;
-        word-spacing: -3px;
+        word-spacing: -7px;
         line-height: 1.1;
         font-weight: bold;
-    }
-    .main-header h1 .word1,
-    .main-header h1 .word2 {
-        display: inline-block;
-        letter-spacing: -1px; /* Juntar las letras entre sí */
-        margin: 0; /* Asegura que no haya margen adicional entre las palabras */
-    }
-    .main-header h1 .word2 {
-        margin-top: -5px; /* Ajusta el espacio entre las dos palabras si es necesario */
     }
     .products-section h2 {
         font-size: 28px;
