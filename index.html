@@ -4,10 +4,10 @@
         <meta charset="UTF-8"> <!--Caracteres compatibles -->
         <!--hace que sea responsiva en moviles -->
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <!--titulo de la pagina -->
         <title>Cosméticos MoonKiss</title>
-        <link rel="stylesheet" href="styles.css"> <!-- Enlace a CSS-->
+        <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css" rel="stylesheet">
         <link rel="stylesheet" href="responsive.css">
+        <link rel="stylesheet" href="styles.css"> <!-- Enlace a CSS-->
     </head>
     <body>
         <!-- Encabezado-->
@@ -33,11 +33,62 @@
                 </ul>
              </nav>
         </header>
-        <section class="hero-section">
+        <!--<section class="hero-section">
             <h2>MoonKiss </h2>
             <p>Tu belleza, nuestro compromiso.</p>
             <a href="products.html" class="explore-button">Explorar Productos</a>
-        </section>
+        </section>-->
+        <section class="carousel-section">
+            <div id="carousel-example" class="carousel slide" data-ride="carousel" data-interval="300000">
+              <!-- Indicadores -->
+              <ol class="carousel-indicators">
+                <li data-target="#carousel-example" data-slide-to="0" class="active"></li>
+                <li data-target="#carousel-example" data-slide-to="1"></li>
+                <li data-target="#carousel-example" data-slide-to="2"></li>
+              </ol>
+          
+              <!-- Imágenes del carrusel -->
+              <div class="carousel-inner">
+                <div class="item active">
+                  <img src="brands/images/beauty/annette.jpg" alt="Slide 1">
+                  <div class="carousel-caption">
+                    <h2 class="carousel-tittle">MoonKiss </h2>
+                    <p class="carousel-subtitle">Tu belleza, nuestro compromiso.</p>
+                    <a href="products.html" class="explore-button">Explorar Productos</a>
+                  </div>
+                </div>
+                <div class="item">
+                  <img src="brands/images/bissu/magico.jpg" alt="Slide 2">
+                  <div class="carousel-caption">
+                    <h2 class="carousel-tittle">MoonKiss </h2>
+                    <p class="carousel-subtitle">Tu belleza, nuestro compromiso.</p>
+                    <a href="products.html" class="explore-button">Explorar Productos</a>
+                  </div>
+                </div>
+                <div class="item">
+                  <img src="brands/images/elf/primer.png" alt="Slide 3">
+                  <div class="carousel-caption">
+                    <h2 class="carousel-tittle">MoonKiss </h2>
+                    <p class="carousel-subtitle">Tu belleza, nuestro compromiso.</p>
+                    <a href="products.html" class="explore-button">Explorar Productos</a>
+                  </div>
+                </div>
+              </div>
+          
+              <!-- Controles -->
+              <a class="left carousel-control" href="#carousel-example" data-slide="prev">
+                <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+                <span class="sr-only">Anterior</span>
+              </a>
+              <a class="right carousel-control" href="#carousel-example" data-slide="next">
+                <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+                <span class="sr-only">Siguiente</span>
+              </a>
+            </div>
+          </section>
+
         <script src="menu.js"></script>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
     </body>
 </html>
