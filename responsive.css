@@ -18,7 +18,7 @@
         margin-right: 5px;
     }
     .main-header h1{
-        font-size: 22px;
+        font-size: 17px;
         color: #C75B7A;
         letter-spacing: -1px;
         word-spacing: -7px;
@@ -50,7 +50,7 @@
         padding: 0;
         position: absolute;
         right: 20px;
-        top: 20px;
+        top: 10px;
     }
     .mobile-menu{
         display: none;
