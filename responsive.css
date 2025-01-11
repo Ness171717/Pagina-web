@@ -18,7 +18,7 @@
         margin-right: 5px;
     }
     .main-header h1{
-        font-size: 30px;
+        font-size: 25px;
         color: #C75B7A;
         letter-spacing: -1px;
         word-spacing: -7px;
@@ -41,7 +41,7 @@
     }
     .menu-toggle{
         display: block;
-        font-size: 2.5rem;
+        font-size: 4rem;
         background: none;
         border: none;
         box-shadow: none;
@@ -50,7 +50,7 @@
         padding: 0;
         position: absolute;
         right: 20px;
-        top: 25px;
+        top: 15px;
     }
     .mobile-menu{
         display: none;

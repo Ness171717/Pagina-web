@@ -1,11 +1,19 @@
 /* estilos basicos de css*/
 @font-face{
    font-family: 'MiFuente';
-   src: url('fuentes/night_michy/Night\ Michy.otf') format('truetype');
+   src: url('fuentes/night_michy/Night\ Michy.otf');
 }
 @font-face {
    font-family: 'MiFuente2';
-   src: url('fuentes/sunset_imaginary/Sunset\ Imaginary\ Regular.otf') format('truetype');
+   src: url('fuentes/sunset_imaginary/Sunset\ Imaginary\ Regular.otf');
+}
+@font-face {
+   font-family: 'MiFuente3';
+   src: url('fuentes/gelasio/gelasio-bolditalic.ttf');
+}
+@font-face {
+   font-family: 'MiFuente4';
+   src: url('fuentes/gelasio/gelasio-italic-vf.ttf');
 }
 *{
     margin: 0;
@@ -14,13 +22,13 @@
 }
 
 body{
-   font-family: 'MiFuente2' !important;  
+   font-family: 'MiFuente4' !important;  
    font-size: 25px;
    color: #C75B7A;
    text-align: center;
 }
 h1{
-   font-family: 'MiFuente2' !important;
+   font-family: 'MiFuente4' !important;
    font-size: 25px;
    color: #C75B7A;
    line-height: 3;
@@ -31,15 +39,16 @@ h1{
 }
 /* estilos para el encabezado*/
 .main-header {
-    font-family: 'MiFuente2';
-    font-size: 25px;
-    line-height: 2;
+    font-family: 'MiFuente3';
+    font-size: 22px;
+    line-height: 1;
     background-color: #FFEAE3;
     display: flex;
     align-items: center;
     justify-content: space-between;
     padding: 5px 20px;
     border-bottom: 1px solid #F3D0D7; /*COLOR DE LAS LINEAS*/
+    margin-bottom: 10px;
 }
 .main-header .logo{
    width: 6%;
@@ -48,8 +57,8 @@ h1{
 }
 
 .main-header h1{ /* encabezado*/
-   font-family: 'MiFuente2';
-    font-size: 50px;
+   font-family: 'MiFuente4';
+    font-size: 35px;
     line-height: 3;
     text-align: justify;
     color: #C75B7A
@@ -137,7 +146,7 @@ h1{
     background-position: center;
     color: #C75B7A;
     text-align: center;
-    padding: 60px 20px;
+    padding: 50px 20px;
 }
 
 .hero-section h2 {
@@ -203,7 +212,7 @@ h1{
 }
  .products-section h2 {
     font-size: 28px;
-    margin-bottom: 5px;
+    margin-bottom: 30px; /*margen entre subtitulo y cards*/
     word-spacing: -2px;
  }
  .product-gallery {
@@ -283,8 +292,8 @@ h1{
  }
  
  .carousel-subtitle {
-   font-size: 18px; /* Ajusta el tamaño de la letra del p */
-   margin-bottom: 20px; /* Ajusta el espacio entre el p y el botón */
+   font-size: 25px; /* Ajusta el tamaño de la letra del p */
+   margin-bottom: 50px; /* Ajusta el espacio entre el p y el botón */
  }
 .carousel-container{
    display: flex;
@@ -360,11 +369,13 @@ h1{
    line-height: 1.5;
 }
  .product-card h3 {
+   font-family: 'MiFuente3';
     margin: 10px 0;
     font-size: 18px;
     color: #3D0C11;
  }
  .product-card p {
+   font-family: 'MiFuente3';
     font-size: 15px;
     color: #643843;
     margin-bottom: 10px;
@@ -381,8 +392,11 @@ h1{
  }
  .brand-section{
    padding: 40px 20px;
-   background-color: #FDF0F0; /*color de fondo de marcas
-   margin-top: 30px; margen de al rededor*/
+   background-color: #FFFFFF; /*color de fondo de marcas*/
+   margin-top: -5px; /*margen de al rededor*/
+ }
+ .brand-section h2{
+   font-size: 60px;
  }
  .brand-gallery{
    display: flex;
