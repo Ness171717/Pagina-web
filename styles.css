@@ -46,11 +46,13 @@ h1{
 
 .main-header h1{ /* encabezado*/
    font-family: 'MiFuente2';
-    font-size: 40px;
+    font-size: 50px;
     line-height: 3;
     text-align: justify;
     color: #C75B7A;
     word-spacing: -3px;
+    font-weight: bold;
+    margin-right: 100px;
 }
 
 .nav-links {
@@ -141,13 +143,14 @@ h1{
 .hero-section h2 {
     font-size: 40px;
     margin-bottom: 10px;
+    margin-top: -50px;
 }
  .hero-section p {
     font-size: 18px;
     margin-bottom: 20px;
  }
 
- .hero-section button {
+ .hero-section .button {
     background-color: #921a40;
     color: #fff;
     border: none;
@@ -155,8 +158,13 @@ h1{
     font-size: 16px;
     cursor: pointer;
     border-radius: 5px;
+    top: 40px;
  }
-
+ .carousel-tittle {
+   font-size: 90px;
+   color: #F78CA2;
+   font-weight: bold;
+ }
  .hero-section button:hover {
     background-color: #921a40;
  }
