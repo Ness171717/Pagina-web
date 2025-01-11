@@ -25,6 +25,9 @@ h1{
    color: #C75B7A;
    line-height: 3;
    text-align: center;
+   word-spacing: -3px;
+   font-weight: bold;
+   margin-right: 100px;
 }
 /* estilos para el encabezado*/
 .main-header {
@@ -49,10 +52,7 @@ h1{
     font-size: 50px;
     line-height: 3;
     text-align: justify;
-    color: #C75B7A;
-    word-spacing: -3px;
-    font-weight: bold;
-    margin-right: 100px;
+    color: #C75B7A
 }
 
 .nav-links {
