@@ -48,6 +48,9 @@
         cursor: pointer;
         color: #C75B7A;
         padding: 0;
+        position: absolute;
+        right: 20px;
+        top: 25px;
     }
     .mobile-menu{
         display: none;
