@@ -5,6 +5,12 @@
 }
 /* Media Query para pantallas pequeñas (móviles) */
 @media (max-width: 768px) {
+    .main-header{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 0 15px;
+    }
     .main-header .logo{
         width: 25%;
         height: auto;
@@ -42,9 +48,6 @@
         cursor: pointer;
         color: #C75B7A;
         padding: 0;
-        position: absolute;
-        left: 306px;
-        top: 25px;
     }
     .mobile-menu{
         display: none;
