@@ -14,11 +14,11 @@
     .main-header .logo{
         width: 25%;
         height: auto;
-        margin-left: -27px;
+        margin-left: -20px;
         margin-right: 5px;
     }
     .main-header h1{
-        font-size: 25px;
+        font-size: 22px;
         color: #C75B7A;
         letter-spacing: -1px;
         word-spacing: -7px;
@@ -41,7 +41,7 @@
     }
     .menu-toggle{
         display: block;
-        font-size: 4rem;
+        font-size: 3rem;
         background: none;
         border: none;
         box-shadow: none;
@@ -50,7 +50,7 @@
         padding: 0;
         position: absolute;
         right: 20px;
-        top: 15px;
+        top: 20px;
     }
     .mobile-menu{
         display: none;
