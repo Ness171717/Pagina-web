@@ -193,7 +193,7 @@ h1{
  }
  .redes-section{
    display: flex;
-   background-color: #ffeae3;
+   background-color: #FFFFFF;
    flex-direction: column; /* Asegura que los elementos estén en columna */
    align-items: center;    /* Centra horizontalmente */
    padding: 20px;
