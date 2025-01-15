@@ -116,6 +116,9 @@ h1{
 .logo {
     height: 50px;
 }
+.mobile-only {
+   display: none;
+}
 
 /* Menú de navegación normal (computadora) */
 .nav-links {

@@ -1,15 +1,11 @@
-.carousel-inner img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-}
+
 /* Media Query para pantallas pequeñas (móviles) */
 @media (max-width: 768px) {
     .main-header{
         display: flex;
         justify-content: space-between;
         align-items: center;
-        padding: 0 15px;
+        padding: 0 35px;
     }
     .main-header .logo{
         width: 25%;
@@ -87,6 +83,9 @@
     .mobile-menu.show {
         display: block; /* Mostrar menú desplegable al hacer clic */
     }
+    .mobile-only {
+        display: block;
+    }
 
     .products-section {
         padding: 10px;
@@ -105,20 +104,46 @@
     h1 {
         font-size: 1.5rem;
     }
+    .carousel{
+        margin: 0;
+        padding: 0;
+        background-color: transparent;
+    }
     .image-carousel{
         position: relative;
         max-width: 100%;
         overflow: hidden;
     }
+    .carousel-section {
+        background-color: transparent; /* Cambia el fondo a transparente si es necesario */
+        padding: 0; /* Elimina cualquier padding adicional */
+        margin: 0;
+    }
+    .carousel-inner{
+        max-height: 100%;
+        height: auto;
+    }
+    .carousel-inner img {
+        width: 100%;
+        height: auto;
+        object-fit: cover;
+    }
+    .carousel-inner .item img{
+        width: 100%;
+        height: auto;
+        object-fit: cover;
+    }
     .carousel-container{
         display: flex;
         transition: transform 0.5s ease-in-out;
         width: 100%;
+        height: auto;
     }
     .carousel-container img {
         width: 100%; /* Cada imagen ocupa el 100% del ancho del contenedor */
+        height: auto;
         object-fit: cover; /* Asegura que la imagen se recorte correctamente si es necesario */
-        flex-shrink: 0;
+
     }
     .carousel-prev,
     .carousel-next{
@@ -138,11 +163,67 @@
     .carousel-next{
        right: 10px;
     }
+    .carousel-caption{
+        bottom: 20px;
+        left: 50%;
+        transform: translateX(-50%);
+        font-size: 14px;
+    }
     .carousel-caption h2 {
         font-size: 24px; /* Cambia el tamaño del título en pantallas más pequeñas */
     }
     .carousel-caption p {
         font-size: 14px; /* Cambia el tamaño del texto de la descripción en pantallas más pequeñas */
+    }
+    .carousel .carousel-indicators{
+        position: absolute;
+        bottom: 10px;
+        left: 50%;
+        transform: translateX(-50%);
+        z-index: 10;
+        display: flex;
+        justify-content: center;
+        list-style: none;
+        padding: 0;
+        margin: 0;
+        list-style: none;
+    }
+    .carousel .carousel-indicators li {
+        width: 12px; /*tamaño del punto*/
+        height: 10px;
+        background-color: #C75B7A; /* Color de los indicadores */
+        border-radius: 50%; /* Hacerlos circulares */
+        margin: 0 5px;
+        cursor: pointer;
+        opacity: 0.7;
+    }
+    
+    .carousel .carousel-indicators .active {
+        background-color: #F6F5F2; /* Cambia el color para el indicador activo */
+        opacity: 1;
+    }
+    .carousel-control{
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        width: 10%;
+        background: rgba(0, 0, 0, 0.2);
+        color: #F1F1F1;
+        z-index: 10;
+    }
+    .carousel-control span{
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+        font-size: 30px; /*tamaño de la flecha*/
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+    .left.carousel-control{
+        left: 0; /*distancia del borde izquierdo*/
+    }
+    .right.carousel-control{
+        right: 0;
     }
     .icon-button{
         background: none;
