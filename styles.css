@@ -143,6 +143,13 @@ h1{
 .nav-links a:visited {
    color: #C75B7A;
 }
+.titulo{
+   color: #C75B7A;
+   text-decoration: none;
+}
+.titulo:hover{
+   color: #C75B7A;
+}
 .hero-section {
     /*background-image: url('assets/hero-image.jpg'); /*imagen de fondo*/
     background-size: cover;
