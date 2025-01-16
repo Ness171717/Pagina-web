@@ -95,12 +95,29 @@
         margin-top: -110px;
     }
     .mobile-only h2{
-        font-size: 30px;
+        font-size: 25px;
         font-weight: bold;
+        color: #643843;
     }
     .mobile-only p{
         font-size: 25px;
         
+    }
+    .new-products-images{
+        display: flex;
+        overflow-x: auto; /*habilita el desplazamiento horizontal*/
+        white-space: nowrap;
+        scroll-behavior: smooth;
+        padding: 10px;
+        gap: 5px;
+        -webkit-overflow-scrolling: touch;
+    }
+    .new-products-images img{
+        height: 150px;
+        width: auto;
+        display: inline-block;
+        border-radius: 3px;
+        cursor: pointer;
     }
     .whatsapp-link{
         color:#643843;
