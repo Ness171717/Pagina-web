@@ -103,6 +103,14 @@
         font-size: 25px;
         
     }
+    /*.new-products-carousel{
+        display: flex;
+        overflow-x: auto;
+        white-space: nowrap;
+        gap: 10px;
+        padding: 10px;
+    }*/
+    
     .new-products-images{
         display: flex;
         overflow-x: auto; /*habilita el desplazamiento horizontal*/
@@ -112,12 +120,26 @@
         gap: 5px;
         -webkit-overflow-scrolling: touch;
     }
+    .image-item{
+        display: inline-block;
+        text-align: center;
+        width: 150px;
+    }
+    .image-item p{
+        font-size: 15px;
+        color: #643843;
+    }
     .new-products-images img{
         height: 150px;
         width: auto;
-        display: inline-block;
+        display: block;
         border-radius: 3px;
         cursor: pointer;
+    }
+    .new-products-description{
+        margin-top: 5px;
+        font-size: 0px;
+        color: #643843;
     }
     .whatsapp-link{
         color:#643843;
