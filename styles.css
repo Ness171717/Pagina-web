@@ -259,11 +259,10 @@ h1{
 .carousel-inner,
 .carousel-item,
 .carousel img {
-  width: 100%; /* Hace que el carrusel ocupe todo el ancho disponible */
+  width: 100%; /*Hace que el carrusel ocupe todo el ancho disponible*/
   max-width: 100%;
-  height: 500px; /* Mantiene la proporción de la imagen */
-
-}
+  height: 500px; /* Mantiene la proporción de la imagen*/
+}/* 
 .image-carousel {
    position: relative;
    width: 100%;
@@ -295,15 +294,15 @@ h1{
    color: #F4D9D0;
 }
 .carousel-title {
-   font-size: 36px; /* Ajusta el tamaño de la letra del h2 */
-   margin-bottom: 10px; /* Espacio entre el h2 y el p */
+   font-size: 36px; /* Ajusta el tamaño de la letra del h2 
+   margin-bottom: 10px; /* Espacio entre el h2 y el p 
    top: 50px;
    position: relative;
  }
  
  .carousel-subtitle {
-   font-size: 25px; /* Ajusta el tamaño de la letra del p */
-   margin-bottom: 50px; /* Ajusta el espacio entre el p y el botón */
+   font-size: 25px; /* Ajusta el tamaño de la letra del p 
+   margin-bottom: 50px; /* Ajusta el espacio entre el p y el botón 
  }
 .carousel-container{
    display: flex;
@@ -318,7 +317,7 @@ h1{
 }
 .carousel-control{
    color: #F3D0D7;
-   text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7); /* Sombra en los controles */
+   text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7); /* Sombra en los controles 
 }
 .carousel-prev,
 .carousel-next{
@@ -337,6 +336,236 @@ h1{
 }
 .carousel-next{
    right: 10px;
+} */
+.carousel{
+   margin: 0;
+   padding: 0;
+   background-color: transparent;
+}
+.image-carousel{
+   position: relative;
+   max-width: 100%;
+   overflow: hidden;
+}
+.carousel-section {
+   position: relative;
+   overflow: hidden;
+   background-color: transparent; /* Cambia el fondo a transparente si es necesario */
+   padding: 0; /* Elimina cualquier padding adicional */
+   margin: 0;
+   width: 100%;
+   height: auto;
+}
+.carousel-inner{
+   position: relative;
+   z-index: 0;
+   width: 100%;
+   height: auto;
+   overflow: hidden;
+   background-color: rgba(0, 0, 0, 0.5);
+   max-height: 100%;
+   min-height: 100%;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   position: relative;
+   padding: 0;
+   margin: 0;
+}
+.carousel-inner img {
+   width: auto;
+   height: auto;
+   max-width: none;
+   object-fit: contain;
+   margin: 0;
+   padding: 0;
+}
+.carousel-inner .item{
+   margin: 0;
+   position: relative;
+   flex-shrink: 0;
+   width: 100%;
+   transition: transform 0.5s ease-in-out;
+   background-color: transparent;
+}
+.carousel-inner .item img{
+   height: auto;
+   object-fit: contain;
+}
+.carousel-container{
+   display: inline-block;
+   width: auto;
+   height: 570px;
+}
+.carousel-track{
+   display: flex;
+   transition: transform 0.5s ease-in-out;
+}
+.carousel-item{
+   min-width: 100%;
+   flex-shrink: 0;
+}
+.carousel-container img {
+   width: 100%; /* Cada imagen ocupa el 100% del ancho del contenedor */
+   height: auto;
+   object-fit: cover; /* Asegura que la imagen se recorte correctamente si es necesario */
+
+}
+.carousel-item img{
+   width: 100%;
+   height: auto;
+}
+.carousel-prev,
+.carousel-next{
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background-color: rgba(0, 0, 0, 0.5);
+  color: #fff;
+  border: none;
+  cursor: pointer;
+  padding: 10px;
+  z-index: 10;
+  max-width: 100%;
+}
+.carousel-prev{
+  left: 10px;
+}
+.carousel-next{
+  right: 10px;
+}
+.carousel-caption{
+   position: absolute;
+   bottom: 20px;
+   left: 50%;
+   transform: translateX(-50%);
+   color: white;
+   text-align: center;
+   z-index: 2;
+}
+.carousel-caption h2 {
+   font-size: 24px; /* Cambia el tamaño del título en pantallas más pequeñas */
+}
+.carousel-caption p {
+   font-size: 14px; /* Cambia el tamaño del texto de la descripción en pantallas más pequeñas */
+}
+.carousel .carousel-indicators{
+   position: absolute;
+   bottom: 160px;
+   z-index: 10;
+   left: 50%;
+   transform: translateX(-50%);
+   display: flex;
+   justify-content: center;
+   list-style: none;
+   padding: 0;
+   margin: 0;
+   list-style: none;
+}
+.carousel-overlay {
+   position: absolute;
+   top: 0;
+   left: 0;
+   width: 100%;
+   height: 100%;
+   z-index: 10;
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   align-items: center;
+   text-align: center;
+   color: white;
+   background: rgba(0, 0, 0, 0.5);
+   padding: 20px;
+   box-sizing: border-box;
+}
+
+.carousel-overlay h2 {
+   font-size: 2rem;
+   margin: 0 0 10px;
+}
+
+.carousel-overlay p {
+   font-size: 1.2rem;
+   margin: 0 0 20px;
+}
+
+.carousel-overlay .btn {
+   display: inline-block;
+   padding: 10px 20px;
+   font-size: 1rem;
+   color: white;
+   background-color: #ff69b4; /* Color del botón */
+   text-decoration: none;
+   border-radius: 5px;
+   transition: background-color 0.3s;
+}
+
+.carousel-overlay .btn:hover {
+   background-color: #ff1493; /* Color al pasar el mouse */
+}
+.carousel .carousel-indicators li {
+   width: 14px; /*tamaño del punto*/
+   height: 14px;
+   background-color: #C75B7A; /* Color de los indicadores */
+   border-radius: 50%; /* Hacerlos circulares */
+   margin: 0 5px;
+   cursor: pointer;
+   opacity: 0.7;
+}
+
+.carousel .carousel-indicators .active {
+   background-color: #F6F5F2; /* Cambia el color para el indicador activo */
+   opacity: 1;
+}
+.carousel-control{
+   position: absolute;
+   top: 0;
+   bottom: 0;
+   width: 10%;
+   background-color: rgba(0, 0, 0, 0.2);
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   z-index: 10;
+}
+.carousel-control span{
+   position: absolute;
+   top: 50%;
+   transform: translateY(-50%);
+   font-size: 30px; /*tamaño de la flecha*/
+   left: 50%;
+   transform: translate(-50%, -50%);
+}
+.explore-button{
+   padding: 10px 20px;
+   background-color: #643843; /* Color del botón */
+   color: #fff;
+   text-decoration: none;
+   border-radius: 5px;
+   font-size: 1.4rem;
+   z-index: 20; /* Por encima del fondo */
+   pointer-events: auto; /* Asegura la interacción */
+}
+.explore-button:hover {
+   background-color: #854b5b; /* Color al pasar el mouse */
+}
+/*.left carousel-control{
+   left: 0; distancia del borde izquierdo
+}
+.right carousel-control{
+   right: 0;
+}*/
+.carousel, .image-carousel, .carousel-section, .carousel-inner, .carousel-container {
+   overflow: hidden; /* Asegúrate de que todo el contenido que se desborda quede oculto */
+}
+.carousel-control span{
+   font-size: 30px;
+   color: white;
+   position: absolute;
+   top: 50%;
+   left: 50%;
+   transform: translateY(-50%) translateX(-50%);
 }
  .product-card:hover{
    transform: scale(1.05); /*agregar un efecto*/
