@@ -1,7 +1,7 @@
 document.addEventListener("DOMContentLoaded", function () {
     // Carrusel automático
     let currentIndex = 0;
-    const items = document.querySelectorAll('.carousel-item');
+    const items = document.querySelectorAll('.carouselI-item');
     const totalItems = items.length;
   
     function moveSlide() {
@@ -10,7 +10,7 @@ document.addEventListener("DOMContentLoaded", function () {
         currentIndex = 0;
       }
       const offset = -currentIndex * 100;
-      document.querySelector('.carousel-track').style.transform = `translateX(${offset}%)`;
+      document.querySelector('.carouselI-track').style.transform = `translateX(${offset}%)`;
     }
     setInterval(moveSlide, 3000);
    });
