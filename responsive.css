@@ -67,7 +67,7 @@
         box-shadow: none;
         z-index: 1000;
     }
-    .mobile-menu.show{
+    .mobile-menu.activate{
         display: block;
     }
     .hero-section h2 {
@@ -91,7 +91,7 @@
         font-size: 1.2rem;
     }
 
-    .mobile-menu.show {
+    .mobile-menu.active {
         display: block; /* Mostrar menú desplegable al hacer clic */
     }
     .mobile-only {
